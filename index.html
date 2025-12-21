@@ -262,6 +262,28 @@
             color: var(--color-text);
             font-size: 1rem;
         }
+
+        /* New Lab Timer Button Styling */
+        .btn-lab-timer {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 77, 153, 0.2);
+        }
+
+        .btn-lab-timer:hover {
+            background-color: #003366;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 77, 153, 0.3);
+            color: var(--color-white);
+        }
     </style>
 </head>
 <body>
@@ -312,7 +334,10 @@
             <div class="card-content">
                 <h2>Starch Gelatinization in Local Kuih</h2>
                 <p>Analyzing the texture profiles of traditional 'Kuih Lapis' using rheological techniques.</p>
-                <p style="color: var(--color-accent); font-weight: 500; margin-top: 10px;">View Abstract →</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                    <p style="color: var(--color-accent); font-weight: 500; margin-top: 15px; cursor: pointer;">View Abstract →</p>
+                    <a href="https://s80324.github.io/lab-timer-app/" target="_blank" class="btn-lab-timer">Try My Lab Timer App</a>
+                </div>
             </div>
         </div>
 
@@ -364,4 +389,3 @@
 </body>
 
 </html>
-
